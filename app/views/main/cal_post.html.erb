@@ -1,0 +1,17 @@
+<h1>Main#cal_post</h1>
+<p>Find me in app/views/main/test.html.erb</p>
+<%= "total score : " %>
+<%= @c1.to_i+@c2.to_i+@c3.to_i %>
+<br>
+<%= "Best subject : " %>
+<%= 
+	if @c1.to_i >= @c2.to_i && @c1.to_i >= @c3.to_i
+		@s1
+	else if @c2.to_i >= @c1.to_i && @c2.to_i >= @c3.to_i
+		@s2
+	else
+		@s3
+	end 
+	end 
+
+%>
